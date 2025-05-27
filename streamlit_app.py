@@ -7,8 +7,9 @@ st.image("lewandowski.jpg",width=200)
 
 st.title("Barcelona Trebel Winner")
 st.header("Pengecek angka ganjil\genap")
+angka = st.number_input("Tulis sebuah angka:", value=0, step=1)
 
-angka = st.number_input("Tulis sebuah angka:", value=0, step=1")
+
 if (angka % 2) == 0:
   st.write(f"{angka} adalah bilangan genap")
 else:
